@@ -1,0 +1,32 @@
+
+/* Niagara */
+.Nimage-section.img-five {
+    background-image: url("../static/N1.jpg");
+    width: 100%;
+    height: 617px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.Nimage-section.img-five figcaption{
+    color: #210571;
+    text-align: center;
+    margin-top: -4px;
+    padding-top: 621px;
+    font-size: 15px;
+    margin-left: -454px;
+}
+
+
+.Nimage-section.img-five-T{
+    background-image: url("../static/N2.jpg");
+    width: 100%;
+    height: 404px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+

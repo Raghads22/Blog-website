@@ -1,0 +1,158 @@
+/* Dubai.css */
+.Dimage-section {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+.Dimage-section::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.Dimage-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Dimage-section.img-two {
+    background-image: url("../static/D1.jpg");
+}
+
+.Dimage-section.img-two-T {
+    background-image: url("../static/D2.jpg");
+}
+
+.Dimage-section.img-two-T figcaption {
+    text-align: left;
+    color: #15129d;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: -40px; /* Positioning figcaption */
+    background-color: rgba(255, 255, 255, 0.7); /* Adding a semi-transparent background for readability */
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.D {
+    margin-left: 14px;
+}
+
+.D p {
+    text-indent: 5px;
+    line-height: 25px;
+}
+
+.D b {
+    color: #101e8b;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .Bcontainer {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+
+    .Bcontent {
+        padding: 15px;
+        font-size: medium;
+    }
+
+    .sidebar ul {
+        font-size: medium;
+    }
+
+    .author-info {
+        font-size: medium;
+    }
+
+    .Dimage-section::before {
+        padding-top: 75%; /* Adjust to 4:3 Aspect Ratio for better fit on small screens */
+    }
+
+    .Dimage-section.img-two-T figcaption {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Bcontainer {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .Bcontent {
+        order: 1;
+        padding: 10px;
+        font-size: medium;
+    }
+
+    .sidebar ul {
+        font-size: medium;
+    }
+
+    .author-info {
+        font-size: medium;
+    }
+
+    .Dimage-section::before {
+        padding-top: 100%; /* Adjust to 1:1 Aspect Ratio for very small screens */
+    }
+
+    .Dimage-section.img-two-T figcaption {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Bcontainer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .Bcontent, .sidebar {
+        padding: 10px;
+    }
+
+    .Bcontent {
+        font-size: small;
+    }
+
+    .sidebar ul {
+        font-size: small;
+    }
+
+    .author-info {
+        font-size: small;
+    }
+
+    .Dimage-section::before {
+        padding-top: 100%; /* Adjust to 1:1 Aspect Ratio for very small screens */
+    }
+
+    .Dimage-section.img-two-T figcaption {
+        font-size: 8px;
+    }
+}
